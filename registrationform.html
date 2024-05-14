@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register form</title>
+    <link rel="stylesheet" href="registration.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Student registration form</h1>
+        <form action="" method="post">
+            <table id="table">
+                <tr>
+                    <td>First name</td>
+                    <td><input type="text" name="username" size="30" maxlength="30" placeholder="Enter first name">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Last name</td>
+                    <td><input type="text" name="lastname" size="30" maxlength="30" placeholder="Enter last name">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Data of birth</td>
+                    <td>
+                        <input type="date">
+                        <!-- <select name="month" id="dayb">
+                        <option value="" disabled selected>month</option>
+                        <option value="1">jan</option>
+                        <option value="2">Feb</option>
+                        <option value="3">Mar</option>
+                        <option value="4">Apr</option>
+                        <option value="5">may</option>
+                        <option value="6">Jun</option>
+                        <option value="7">Jul</option>
+                        <option value="8">Aug</option>
+                        <option value="9">Sep</option>
+                        <option value="10">Oct</option>
+                        <option value="11">Nov</option>
+                        <option value="12">Dec</option>
+                    </select> <input type="number" name="year" size="5" id="dayb" maxlength="4" placeholder="year" min="1995" max="2015"> -->
+                    </td>
+                </tr>
+                <tr>
+                    <td>Email id</td>
+                    <td>
+                        <input type="email" name="email" id="email" placeholder="Enter email">
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>Mobile no</td>
+                    <td><input type="tel" maxlength="12" placeholder="Enter phone no"></td>
+                </tr>
+                <tr>
+                    <td>Gender</td>
+                    <td>
+                        <input type="radio" name="gender" value="M"> <label for="">Male</label>
+                        <input type="radio" name="gender" value="F"> <label for="">Female</label>
+                        <input type="radio" name="gender" value="O"> <label for="">other</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Address</td>
+                    <td><textarea rows="4" cols="40" id="comments"></textarea></td>
+                </tr>
+                <tr>
+                    <td>Pincode</td>
+                    <td><input type="number" maxlength="6" minlength="1"></td>
+                </tr>
+                <tr>
+                    <td>State</td>
+                    <td><input type="text" placeholder="state">
+
+
+                    </td>
+                </tr>
+                <tr>
+
+
+                    <td colspan="2">
+                        <table id="table2">
+                            <tr>
+                                <th>
+                                    Qualification
+                                </th>
+
+                            </tr>
+                            <tr>
+                                <th>Sl No</th>
+                                <th>Examination</th>
+                                <th>Board</th>
+                                <th>Percentage</th>
+                                <th>Year of Passing</th>
+                            </tr>
+                            <tr>
+                                <td>1.</td>
+                                <td>X</td>
+                                <td><input type="text" name="board_x" pattern="[A-Za-z ]+" title="Please enter letters only"></td>
+                                <td><input type="number" name="percentage_x" min="0" max="100"></td>
+                                <td><input type="text" name="year_x" pattern="\d{4}" title="Please enter a 4-digit year"></td>
+                            </tr>
+                            <tr>
+                                <td>2.</td>
+                                <td>XII</td>
+                                <td><input type="text" name="board_xii" pattern="[A-Za-z ]+" title="Please enter letters only"></td>
+                                <td><input type="number" name="percentage_xii" min="0" max="100"></td>
+                                <td><input type="text" name="year_xii" pattern="\d{4}" title="Please enter a 4-digit year"></td>
+                            </tr>
+                            <tr>
+                                <td>3.</td>
+                                <td>Graduation</td>
+                                <td><input type="text" name="board_graduation" pattern="[A-Za-z ]+" title="Please enter letters only"></td>
+                                <td><input type="number" name="percentage_graduation" min="0" max="100"></td>
+                                <td><input type="text" name="year_graduation" pattern="\d{4}" title="Please enter a 4-digit year"></td>
+                            </tr>
+                            <tr>
+                                <td>4.</td>
+                                <td>Master</td>
+                                <td><input type="text" name="board_master" pattern="[A-Za-z ]+" title="Please enter letters only"></td>
+                                <td><input type="number" name="percentage_master" min="0" max="100"></td>
+                                <td><input type="text" name="year_master" pattern="\d{4}" title="Please enter a 4-digit year"></td>
+                            </tr>
+                        </table>
+
+
+                    </td>
+                </tr>
+                <tr>
+                    <td>Course</td>
+                    <td><input type="radio" name="course" value="Bca"><label for="">Bca</label>
+                        <input type="radio" name="course" value="Bsc cs"><label for="">Bcs cs</label>
+                        <input type="radio" name="course" value="Bcom"><label for="">Bcom</label>
+                        <input type="radio" name="course" value="BBa"><label for="">BBa</label>
+                    </td>
+                </tr>
+
+            </table>
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </form>
+
+    </div>
+
+
+
+</body>
+
+</html>
